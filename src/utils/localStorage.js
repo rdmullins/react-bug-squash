@@ -6,3 +6,5 @@ export function getLocalStorage(listName) {
 function setLocalStorage(listName, items) {
   localStorage.setItem(listName, JSON.stringify(items));
 }
+
+export {setLocalStorage};

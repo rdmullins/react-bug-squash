@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
 
+function getData(data) {
+
+};
+
 export default function Wizards() {
   const ENDPOINT = 'Wizards';
   const [wizards, setWizards] = useState();
@@ -32,7 +36,7 @@ export default function Wizards() {
                 </tr>
               </thead>
               <tbody>
-                {wizards.map((wizard) => <Wizard key={wizard.id} />)}
+                {wizards.map((wizard) => <wizard key={wizard.id} />)}
               </tbody>
             </table>
           </div>
@@ -41,7 +45,7 @@ export default function Wizards() {
   );
 }
 
-const Wizard = () => {
+const wizard = () => {
   return (
     <tr>
       <td>{`${wizard.firstName} ${wizard.lastName}`}</td>
